@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee-house Menu</title>
+    <link rel="stylesheet" href="menu_style.css">
+    <link rel="stylesheet" href="../assets/general.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+</head>
+<body>  
+    <div id = "main-container">
+        <div id="main">
+            <div class = "header-container">
+                <a class="header-logo" href="../index.html" aria-label="homepage">
+                    <!-- <img class="header-icon" src="../images/logo.svg" alt="Coffee House logo"> -->
+                </a>
+                <div class = "header-navigation">
+                    <a class="header-nav-link flex-elem appearOnHover" href="../index.html#favorite-coffee">
+                        Favorite coffee 
+                        <div class = "contact-info-slider"></div>
+                    </a>
+                    <a class="header-nav-link flex-elem appearOnHover" href="../index.html#about">
+                        About
+                        <div class = "contact-info-slider"></div>
+                    </a>
+                    <a class="header-nav-link flex-elem appearOnHover" href="../index.html#mobile-app">
+                        Mobile app
+                        <div class = "contact-info-slider"></div>
+                    </a>
+                    <a class="header-nav-link flex-elem appearOnHover" href="#footer">
+                        Contact us
+                        <div class = "contact-info-slider"></div>
+                    </a>
+                </div>
+                <div class = "header-menu-link">
+                    <a class="header-menu" href="../menu/menu.html">
+                        <span>Menu</span>
+                        <img class="cup-icon" src="../images/coffee-cup.svg" alt="Icon of coffee cup">
+                    </a>
+                    <div class="menu-icon-underline"></div>
+                </div>
+                <a class = "header-burger" href="../home/burger.html">
+                    <img class = "menu-header-burger" src = "../images/button-icon-burger.svg" alt="burger">
+                </a>
+            </div>
+            <div class = "menu">
+                <div class = "menu-offer">
+                    <h1 class = "offer-text dark">
+                        Behind each of our cups hides an <span class = "accent italic">amazing surprise</span>
+                    </h1>
+                    <div class = "offer-option">
+                        <button class = "tab-item tab-dark" id = "tab-coffee">
+                            <span class = "img-circle back-body">
+                                <span class = "tab-img-item">☕</span>
+                            </span>
+                            <span class = "tab-item-text light">Coffee</span>
+                        </button>
+                        <button class = "tab-item tab-light" id = "tab-tea">
+                            <span class = "img-circle back-light">
+                                <span class = "tab-img-item">🫖</span>
+                            </span>
+                            <span class = "tab-item-text dark">Tea</span>
+                        </button>
+                        <button class = "tab-item tab-light" id = "tab-dessert">
+                            <span class = "img-circle back-light">
+                                <span class = "tab-img-item">🍰</span>
+                            </span>
+                            <span class = "tab-item-text dark">Dessert</span>
+                        </button>
+                    </div>
+                </div>
+                <div class = "menu-grid" id = "menu-grid">
+                    <!-- Here will be cards with the coffee -->
+                </div>
+                <a class = "menu-reload-circle">
+                    <img class = "menu-reload-img" src = "../images/refresh.svg" alt="refresh">
+                </a>
+            </div>
+        </div>
+
+        <div id = "footer" class = "footer">
+            <div class = "footer-container">
+                <div class = "footer-offer">
+                    <h2 class="footer-offer-text light">
+                        Sip, Savor, Smile. <span class="accent italic">It's coffee time!</span>
+                    </h2>
+                    <div class = "offer-links">
+                        <button class = "offer-circle" type="button">
+                            <img class = "offer-image" src = "../images/twitter-light.svg" alt="icon of twitter">
+                            <img class = "offer-image appearOn" src = "../images/twitter-dark.svg" alt="icon of twitter">
+                        </button>
+                        <button class = "offer-circle" type="button">
+                            <img class = "offer-image" src = "../images/instagram-light.svg" alt="icon of instagram">
+                            <img class = "offer-image appearOn" src = "../images/instagram-dark.svg" alt="icon of instagram">
+                        </button>
+                        <button class = "offer-circle" type="button">
+                            <img class = "offer-image" src = "../images/facebook-light.svg" alt="icon of facebook">
+                            <img class = "offer-image appearOn" src = "../images/facebook-dark.svg" alt="icon of facebook">
+                        </button>
+                    </div>
+                </div>
+                <div class = "footer-contact-info">
+                    <h3 class = "light">Contact us</h3>
+                    <div class = "contact-info">
+                        <div class = "contact-info-with-slider">
+                            <div class = "contact-info-element contact-elem-1">
+                                <img class = "contact-pin contact-elem" src = "../images/pin-alt.svg" alt="picture for pin">
+                                <a class = "contact-text light" href="https://maps.google.com/?ll=30.3212625,-89.8586278">8558 Green Rd., &nbsp;LA</a>
+                            </div>
+                            <div class = "contact-info-slider"></div>
+                        </div>
+                        <div class = "contact-info-with-slider">
+                            <div class = "contact-info-element">
+                                <img class = "contact-phone contact-elem" src = "../images/phone.svg" alt="picture for phone">
+                                <a class = "contact-text light" href="tel:+16035550123">+1 (603) 555-0123</a>
+                            </div>
+                            <div class = "contact-info-slider"></div>
+                        </div>
+                        <div class = "contact-info-element">
+                            <img class = "contact-clock contact-elem" src = "../images/clock.svg" alt="picture for clock">
+                            <span class = "contact-text light">Mon-Sat: 9:00 AM – 23:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "popup-card">
+        <div class = "popup-card-coffee" id = "popup-card-coffee">
+            <div class = "popup-card-img"></div>
+            <div class = "popup-information">
+                <h3 id = "popup-card-name" class = "dark">Name</h3>
+                <p id = "popup-card-information" class = "dark">Description</p>
+                <div class = "size">
+                    <p class = "dark">Size</p>
+                    <div class = "size-elements">
+                        <!-- Here 3 buttons-->
+                    </div>
+                </div>
+                <div class = "additives">
+                    <p class = "dark">Additives</p>
+                    <div class = "additive-elements">
+                        <!-- Here 3 buttons-->
+                    </div>
+                </div>
+                <div class = "total">
+                    <h3>Total:</h3>
+                    <h3 class = "total-cost">$7.00</h3>
+                </div>
+                <div class = "alert">
+                    <div class = "alert-circle">
+                        <img src = "../images/alert.svg" alt = "alert">
+                    </div>
+                    <p class = "alert-text">
+                        The cost is not final. 
+                        Download our mobile app to see the final price and place your order. 
+                        Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
+                    </p>
+                </div>
+                <button class = "close-popup" id = "close-popup">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./menu.js"></script>
+</body>
+</html>

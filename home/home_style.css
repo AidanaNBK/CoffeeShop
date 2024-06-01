@@ -1,0 +1,754 @@
+:root {
+    --height-back: 644px;
+}
+body{
+    background-color: var(--background-body);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1440px;
+    padding: 20px 0px 40px 0px;
+    margin: 0 auto;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+  box-sizing: inherit;
+  transition: 0.5s ease-in-out;
+}
+h1{
+    display: block;
+    font-size: 72px; 
+    font-weight: 600;
+    line-height: 105%;
+    font-family: Inter;
+    color: var(--text-light)
+}
+h2{
+    display: block;
+    font-size: 60px; 
+    font-weight: 600;
+    line-height: 125%;
+    font-family: Inter;
+}
+h3{
+    display: block;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+p{
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.italic{
+    font-family: Inter;
+    font-style: italic;
+}
+.accent{
+    color: var(--text-accent);
+}
+.light{
+    color: var(--text-light);
+}
+.lightPic{
+    background-color: var(--border-dark);
+}
+.dark{
+    color: var(--text-dark);
+}
+.darkPic{
+    background-color: var(--text-dark);
+}
+/*This part of the style is related to the header section*/
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+.header-container{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    max-width: 1440px;
+}
+.header-logo{
+    width: 100px;
+    height: 60px;
+    background-image: url("../images/logo.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-navigation{
+    width: 1188px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.header-nav-link{
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 150%;
+    transition: 0.5s ease-out;
+}
+.header-menu-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.header-burger{
+    display: none;
+    cursor: pointer;
+}
+.header-menu{
+    /* height: 28px;
+    width: 72px; */
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/*Part related to hover in menu icon!*/
+.menu-icon-underline{
+    height: 2px;
+    background-color: var(--background-body);
+}
+.header-menu-link:hover .menu-icon-underline{
+    background-color: var(--text-dark);
+    animation: width-change 0.5s forwards;
+    transition: 0.5s erase;
+}
+/*hover of menu icon till here*/
+
+.cup-icon{
+    margin-bottom: 4px;
+    height: 20px;
+    width: 20px;
+}
+.enjoy{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+}
+.hero-back-img{
+    border-radius: 40px;
+    max-width: 1360px;
+    height: var(--height-back);
+    object-fit: cover;
+    z-index: -1;
+}
+.background-video{
+    border-radius: 40px;
+    max-width: 1360px;
+    height: var(--height-back);
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-offer-cover{
+    width: calc(100%-380px);
+    /* width: 1160px; */
+    position: absolute;
+    padding: 100px;
+    align-items: center;
+}
+.hero-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 43%;
+    gap: 40px;
+}
+.hero-menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-menu-btn{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--text-dark);
+    background-color: var(--background-body);
+    border-radius: 40px;
+    align-self: stretch;
+    padding: 21px 0px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 1s ease-out;
+}
+.cup-menu{
+    width: 0px;
+    height: 20px;
+}
+/*part of the code related to the hover of the menu button*/
+.hero-menu-btn:hover {
+    gap: 8px;
+    .cup-menu {
+       animation: appearCup 1s forwards;
+    }
+}
+@keyframes appearCup {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 20px;
+    }
+}
+
+@keyframes appearCup768 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 10px;
+    }
+}
+@keyframes appearCup380 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 4px;
+    }
+}
+
+/*Here the part of the style related to the favorite-coffee section*/
+.favorite-coffee-text{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: 40px;
+}
+.title-coffee{
+    color: var(--text-dark);
+    text-align: center;
+}
+.coffee-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+.coffee-slider-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 35%;
+    margin: 0 auto;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.slider-circle{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    border-radius: 100px;
+    border: 1px solid var(--border-dark);
+    background-color: var(--background-body);
+    margin: 0px 3px;
+}
+.slider-circle:hover{
+    background-color: var(--background-container);
+    .appearOn{
+        opacity: 1;
+    }
+}
+.coffee-slider-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.coffee-slider-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: 480px;
+}
+.control-slider{
+    height: 4px;
+    width: 40px;
+    border-radius: 2px;
+}
+.coffee-picture{
+    object-fit: cover;
+}
+.coffee-description{
+    text-align: center;
+}
+.coffee-price{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.slider-bottom{
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+
+/*Here the part of the style related to the about section*/
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 35px 0px 40px;
+    gap: 40px;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.about-content-left, .about-content-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    justify-content: center; 
+    align-items: center;
+}
+.round{
+    border-radius: 20px;
+    background-position: center;
+}
+.about1{
+    background-image: url("../images/about-1.svg");
+}
+.about2{
+    background-image: url("../images/about-2.svg");
+}
+.about3{
+    background-image: url("../images/about-3.svg");
+}
+.about4{
+    background-image: url("../images/about-4.svg");
+}
+.about-image-large{
+    min-width: 660px;
+    height: 590px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-image-small{
+    min-width: 660px;
+    height: 430px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hoverOn{
+    transition: 0.5s ease-in-out;
+}
+.hoverOn:hover{
+    background-size: 100%;
+}
+/*Here the part of the style related to the mobile-app section*/
+.mobile-app{
+    padding: 0px 40px;
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-app-img{
+    background-image: url("../images/mobile-screens.svg");
+    width: 630px;
+    height: 630px;
+    background-position: center;
+    background-size: 100%;
+    flex-shrink: 1;
+}
+.mobile-app-content{
+    width: 630px;
+    max-width: 100vw - 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 1;
+}
+.mobile-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.link{
+    border-radius: 100px;
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border-dark);
+    background-color: var(--background-body);
+    width: 158px;
+}
+.link:hover{
+    background-color: var(--background-container);
+    .iconAppear{
+        opacity: 1;
+    }
+    .icon-available{
+        color: var(--text-light);
+    }
+    .icon-platform{
+        color: var(--text-light);
+    }
+}
+.icon{
+    height: 36px;
+    width: 36px;;
+}
+.iconAppear{
+    position: absolute;
+    opacity: 0;
+}
+.icon-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 2px;
+}
+.icon-available{
+    font-family: Inter;
+    color: var(--text-dark);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+}
+.icon-platform{
+    font-family: Inter;
+    color: var(--text-dark);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+@media (width < 1400px) {
+    #header{
+        gap: 9px;
+    }
+    body{
+        padding: 10px 0px 20px 0px;
+        gap: 50px;
+    }
+    h1{
+        font-size: 36.5px; 
+    }
+    h2{
+        font-size: 30.5px; 
+    }
+    h3{
+        font-size: 12px;
+    }
+    p{
+        font-size: 8.1px;
+    }
+    .header-logo{
+        height: 32px;
+    }
+    .header-nav-link{
+        font-size: 8px;
+        line-height: 150%;
+    }
+    .header-menu{
+        font-size: 8px;
+        line-height: 150%;
+        gap: 4.4px;
+    }
+    .cup-menu{
+        height: 10px;
+    }
+    .cup-icon{
+        margin-bottom: 1px;
+        height: 10px;
+        width: 10px;
+    }
+    .header-navigation{
+        gap: 20px;
+    }
+    .hero-back-img{
+        border-radius: 20px;
+        height: calc((((100vw)/1440)*644));
+    }
+    .hero-offer{
+        max-width: 45%;
+        gap: 20px;
+    }
+    .hero-offer-cover{
+        padding: 50px;
+    }
+    .hero-menu-btn{
+        border-radius: 20px;
+        align-self: stretch;
+        padding: 11px 0px;
+        width: 101px;
+        font-size: 8px;
+    }
+    .hero-menu-btn:hover {
+        gap: 4px;
+        .cup-menu {
+            animation: appearCup768 1s forwards;
+        }
+    }
+    .favorite-coffee-text{
+        padding: 0px 40px;
+        gap: 20px;
+    }
+    .coffee-slider-image{
+        width: 243px;
+        height: 243px;
+    }
+    .coffee-slider-content{
+        gap: 10px;
+    }
+    .coffee-price{
+        font-size: 12px;
+    }
+    .coffee-slider-text{
+        gap: 8px;
+    }
+    .slider-bottom{
+        gap: 6px;
+    }
+    .control-slider{
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+    }
+    .slider-circle{
+        padding: 9px;
+        border-radius: 50px;
+        margin: 0px 2px;
+    }
+    .slider-arrow{
+        height: 10px;
+    }
+    .about{
+        gap: 20px;
+    }
+    .about-content{
+        gap: 20px;
+    }
+    .about-image-large{
+        min-width: 330px;
+        height: 295px;
+    }
+    .about-image-small{
+        min-width: 330px;
+        height: 215px;
+    }
+    .about-content-left, .about-content-right{
+        gap: 20px; 
+    }
+    .mobile-app{
+        padding: 10px 40px 0px 40px;
+        gap: 50px;
+    }
+    .mobile-app-img{
+        width: 315px;
+        height: 315px;
+    }
+    .mobile-app-content{
+        width: 315px;
+        gap: 20px;
+    }
+    .mobile-buttons{
+        gap: 10px;
+    }
+    .link{
+        border-radius: 50px;
+        padding: 5px 10px;
+        gap: 4px;
+        width: 79px;
+    }
+    .icon{
+        height: 18px;
+        width: 18px;
+    }
+    .iconAppear{
+        height: 18px;
+        width: 18px;
+    }
+    .icon-available{
+        font-size: 5px;
+    }
+    .icon-platform{
+        font-size: 8px;
+    }
+}
+@media (width <= 1000px){
+    #header{
+        gap: 20px;
+    }
+    .header-navigation{
+        display: none;
+    }
+    .header-logo{
+        width: 100px;
+        height: 60px;
+    }
+    .header-menu-link{
+        display: none;
+    }
+    .header-burger{
+        display: inline;
+        border-radius: 100px;
+        border: 1px solid var(--border-dark);
+        height: 44px;
+        width: 44px;
+        cursor: pointer;
+    }
+    .hero-back-img{
+        height: 644px;
+        max-width: 688px;
+    }
+    .hero-offer-cover{
+        padding: 100px 60px 100px 60px !important;
+        border-radius: 40px;    
+    }
+    .hero-offer{
+        max-width: 90% !important;
+    }
+    .hero-menu-btn {
+        gap: 8px;
+    }
+    .cup-menu{
+        width: 20px;
+    }
+    .coffee-slider-content{
+        max-width: 80%;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .about-image-small{
+        display: none;
+    }
+    .about-image-large{
+        min-width: 688px;
+    }
+    .mobile-app{
+        flex-direction: column;
+    }
+    .mobile-app-content{
+        width: 100%;
+    }
+}
+@media (width <= 720px){
+    h1{
+        font-size: 42px; 
+        line-height: 48.3px;
+    }
+    h2{
+        font-size: 32px; 
+        line-height: 40px;
+    }
+    .header-container{
+        padding: 0px 15px;
+    }
+    .enjoy{
+        padding: 0px 15px;
+    }
+    .hero-back-img{
+        height: 552px;
+        max-width: 348px;
+    }
+    .hero-offer-cover{
+        padding: 60px 16px !important;
+        border-radius: 40px;  
+    }
+    .hero-offer{
+        max-width: 95% !important;
+        gap: 40px;  
+    }
+    .favorite-coffee-text{
+        padding: 0px 15px;
+    }
+    .coffee-slider-left, .coffee-slider-right{
+        display: none;
+    }
+    .coffee-slider-image{
+        width: 348px;
+        height: 348px;
+    }
+    .coffee-slider-content{
+        max-width: 100%;
+    }
+    .about{
+        padding: 0px 16px;
+    }
+    .about-image-large{
+        min-width: 348px;
+        width: 348px;
+        height: 590px;
+        border-radius: 20px;
+        background-size: 200%;
+        pointer-events: none;
+    }
+    .mobile-app{
+        padding: 0px 15px;
+        gap: 40px;
+    }
+    .mobile-buttons{
+        flex-direction: column;
+    }
+    .mobile-app-img{
+        width: 348px;
+        height: 348px;
+    }
+}

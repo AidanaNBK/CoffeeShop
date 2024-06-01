@@ -1,0 +1,575 @@
+body{
+    background-color: var(--background-body);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+    box-sizing: inherit;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    display: block;
+    font-size: 60px; 
+    font-weight: 600;
+    line-height: 125%;
+    font-family: Inter;
+    color: var(--text-light)
+}
+h2{
+    display: block;
+    font-size: 60px; 
+    font-weight: 600;
+    line-height: 125%;
+    font-family: Inter;
+}
+h3{
+    display: block;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+p{
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.italic{
+    font-family: Inter;
+    font-style: italic;
+}
+.accent{
+    color: var(--text-accent);
+}
+.light{
+    color: var(--text-light);
+}
+.dark{
+    color: var(--text-dark);
+}
+
+/*This part of the style is related to the header in main section*/
+#main-container{
+    padding: 20px 0px 40px 0px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+.header-container{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    max-width: 1440px;
+}
+.header-logo{
+    width: 100px;
+    height: 60px;
+    background-image: url("../images/logo.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-navigation{
+    padding-bottom: 2px;
+    width: 1188px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.header-burger{
+    display: none;
+}
+.header-nav-link{
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 150%;
+}
+.header-menu-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    pointer-events: none;
+}
+.header-menu{
+    height: 28px;
+    width: 72px;
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/*Part related to hover in menu icon!*/
+.menu-icon-underline{
+    height: 2px;
+    background-color: var(--text-dark);
+    animation: width-change 0.5s forwards;
+    transition: 0.5s erase;
+}
+
+.cup-icon{
+    margin-bottom: 4px;
+    height: 20px;
+    width: 20px;
+}
+/*This part of the style is related to the menu in main section*/
+.menu{
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.menu-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-reload-circle{
+    display: none;
+}
+.offer-text{
+    text-align: center;
+    width: 60%;
+}
+.offer-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.tab-item{
+    cursor: pointer;
+    display: flex;
+    padding: 7px 15px 7px 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+}
+.tab-dark{
+    border: 1px solid var(--border-dark);
+    background: var(--background-container);
+}
+.tab-light{
+    border: 1px solid var(--border-light);
+    background: var(--background-body);
+    transition: all 0.5s ease-in;
+}
+.tab-light:hover{
+    background: var(--background-container);
+    .back-light{
+        background: var(--background-body);
+    }
+    .dark{
+        color: var(--text-light);
+    }
+}
+.tab-item-text{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.img-circle{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    /* padding: 3px 7px; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.back-body{
+    background: var(--background-body);
+}
+.back-light{
+    background: var(--border-light);
+}
+.tab-img-item{
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.menu-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.coffee-card{
+    border-radius: 40px;
+    border: 1px solid var(--border-dark);
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+}
+.coffee-card-img{
+    width: 306px;
+    height: 306px;
+    border-radius: 40px;
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.hoverOn{
+    transition: 0.5s ease-in-out;
+}
+.hoverOn:hover{
+    background-size: 100%;
+}
+.coffee-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 156px;
+}
+.coffee-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.coffee-price{
+    color: var(--text-dark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+#popup-card{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    background-color: var(--background-backdrop);
+}
+.popup-card-coffee{
+    width: 800px;
+    /* height: 504px; */
+    padding: 16px;
+    border-radius: 40px;
+    background-color: var(--background-body);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid var(--border-dark);
+    /* display: none; */
+}
+.popup-card-coffee:not(){
+    opacity: 0.5;
+}
+.popup-informations{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 20px;
+}
+.popup-card-img{
+    flex: 1 0 310px;
+    height: 310px;
+    border-radius: 40px;
+    object-fit: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.popup-information{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.size, .additives{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px; 
+}
+.size-elements, .additive-elements{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px; 
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.alert{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border: 0.5px 0px 0px 0px solid var(--border-dark);
+}
+.alert-circle{
+    width: 16px;
+    height: 16px;
+    padding: 1.33px;
+    /* background-image: url("../images/alert.svg"); */
+}
+.alert-text{
+    font-size: 10px;
+}
+.close-popup{
+    border: 1px solid var(--border-dark);
+    padding: 10px 78px 10px 78px;
+    border-radius: 100px;
+    background-color: var(--background-body);
+    cursor: pointer;
+}
+
+
+
+@media (width < 1400px){
+    #main{
+        gap: 9px;
+    }
+    body{
+        padding: 10px 0px 20px 0px;
+        gap: 50px;
+    }
+    h1{
+        font-size: 30.3px; 
+    }
+    h2{
+        font-size: 30.5px; 
+    }
+    h3{
+        font-size: 12px;
+    }
+    p{
+        font-size: 8.1px;
+    }
+    .header-logo{
+        height: 32px;
+    }
+    .header-nav-link{
+        font-size: 8px;
+        line-height: 150%;
+    }
+    .header-menu{
+        height: 14px;
+        width: 36px;
+        font-size: 8px;
+        line-height: 150%;
+        gap: 4.4px;
+    }
+    .header-menu-link{
+        gap: 0px !important;
+    }
+    .cup-menu{
+        height: 10px;
+    }
+    .cup-icon{
+        margin-bottom: 1px;
+        height: 10px;
+        width: 10px;
+    }
+    .header-menu-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        pointer-events: none;   
+    }
+    .header-navigation{
+        gap: 21px;
+    }
+    .menu-icon-underline{
+        height: 1px;
+    }
+    .menu-offer{
+        gap: 20px;
+    }
+    .offer-option{
+        gap: 7.5px;
+    }
+    .tab-item{
+        padding: 3.5px 7.5px 3.5px 3.5px;
+        gap: 4px;
+        border-radius: 50px;
+    }
+    .tab-item-text{
+        font-size: 8px;
+    }
+    .img-circle{
+        padding: 1.5px 3px;
+        border-radius: 50px;
+    }
+    .tab-img-item{
+        font-size: 8px;
+    }
+    .menu{
+        gap: 20px;
+    }
+    .menu-grid{
+        gap: 18px;
+    }
+    .coffee-card{
+        border-radius: 20px;
+        width: 154px;
+    }
+    .coffee-card-img{
+        width: 154px;
+        height: 154px;
+        border-radius: 20px; 
+    }
+    .coffee-text{
+        padding: 10px;
+        height: 81px;
+    }
+    .coffee-price{
+        font-size: 12px;
+    }
+    .coffee-info{
+        gap: 6px;
+    }
+}
+
+@media (width <= 1000px){
+    #menu{
+        gap: 20px;
+    }
+    .header-navigation{
+        display: none;
+    }
+    .header-logo{
+        width: 100px;
+        height: 60px;
+    }
+    .header-menu-link{
+        display: none;
+    }
+    .header-burger{
+        display: inline;
+        border-radius: 100px;
+        border: 1px solid var(--border-dark);
+        height: 44px;
+        width: 44px;
+        cursor: pointer;
+    }
+    .offer-text{
+        width: 100%;
+    }
+    .card-dissapear{
+        display: none;
+    }
+    .menu{
+        gap: 40px;
+    }
+    .menu-grid{
+        justify-content: space-between;
+        margin: 0px 14px;
+        row-gap: 40px;
+    }
+    .menu-reload-circle{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        border: 1px solid var(--border-dark);
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .coffee-card{
+        width: 308px;
+    }
+    .coffee-card-img{
+        width: 308px;
+        height: 308px;
+    }
+    .img-circle{
+        padding: 0px;
+    }
+}
+
+@media (width <= 720px){
+    h1{
+        font-size: 32px; 
+        line-height: 40px;
+    }
+    h2{
+        font-size: 32px; 
+        line-height: 40px;
+    }
+    .header-container{
+        padding: 0px 15px;
+    }
+    .menu{
+        padding: 0px 15px;
+    }
+    .offer-option{
+        gap: 8px;
+    }
+    .menu-grid{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .offer-text{
+        padding: 0px 15px;
+    }
+    .img-circle{
+        padding: 0px;
+    }
+}

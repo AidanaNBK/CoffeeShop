@@ -1,220 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee-house Home</title>
-    <link rel="stylesheet" href="home/home_style.css">
-    <link rel="stylesheet" href="assets/general.css">
-    <link rel="icon" type="image/x-icon" href="images/logo.svg">
-</head>
-<body>
-    <div id = "header">
-        <div class = "header-container">
-            <a class="header-logo" href="index.html" aria-label="homepage">
-                <!-- <img class="header-icon" src="images/logo.svg" alt="Coffee House logo"> -->
-            </a>
-            <div class = "header-navigation">
-                <a class="header-nav-link flex-elem appearOnHover" href="index.html#favorite-coffee">
-                    Favorite coffee 
-                    <div class = "contact-info-slider"></div>
-                </a>
-                <a class="header-nav-link flex-elem appearOnHover" href="index.html#about">
-                    About
-                    <div class = "contact-info-slider"></div>
-                </a>
-                <a class="header-nav-link flex-elem appearOnHover" href="index.html#mobile-app">
-                    Mobile app
-                    <div class = "contact-info-slider"></div>
-                </a>
-                <a class="header-nav-link flex-elem appearOnHover" href="index.html#footer">
-                    Contact us
-                    <div class = "contact-info-slider"></div>
-                </a>
-            </div>
-            <div class = "header-menu-link">
-                <a class="header-menu" href="menu/menu.html">
-                    <span>Menu</span>
-                    <img class="cup-icon" src="images/coffee-cup.svg" alt="Icon of coffee cup">
-                </a>
-                <div class="menu-icon-underline"></div>
-            </div>
-            <a class = "header-burger" href="home/burger.html">
-                <img class = "menu-header-burger" src = "images/button-icon-burger.svg" alt="burger">
-            </a>
+    <link rel="stylesheet" href="home/home_style.css" />
+    <link rel="stylesheet" href="assets/general.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="header-container">
+        <a class="header-logo" href="index.html" aria-label="homepage">
+          <!-- <img class="header-icon" src="images/logo.svg" alt="Coffee House logo"> -->
+        </a>
+        <div class="header-navigation">
+          <a
+            class="header-nav-link flex-elem appearOnHover"
+            href="index.html#favorite-coffee"
+          >
+            Favorite coffee
+            <div class="contact-info-slider"></div>
+          </a>
+          <a
+            class="header-nav-link flex-elem appearOnHover"
+            href="index.html#about"
+          >
+            About
+            <div class="contact-info-slider"></div>
+          </a>
+          <a
+            class="header-nav-link flex-elem appearOnHover"
+            href="index.html#mobile-app"
+          >
+            Mobile app
+            <div class="contact-info-slider"></div>
+          </a>
+          <a
+            class="header-nav-link flex-elem appearOnHover"
+            href="index.html#footer"
+          >
+            Contact us
+            <div class="contact-info-slider"></div>
+          </a>
         </div>
-        <div class = "enjoy">
-            <video autoplay loop muted playsinline class = "background-video" id = "background-video">
-                <source src="./assets/video.mp4" type="video/mp4">
-            </video>
-            <!-- <img class="hero-back-img" src="images/img-hero.svg" alt="Background with coffee cup"> -->
-            <div class = "hero-offer-cover">
-                <div class = "hero-offer">
-                    <h1><span class="italic accent">Enjoy </span>premium coffee at our charming cafe</h1>
-                    <p class="light">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-                    <div class = "hero-menu-button">
-                        <a class="hero-menu-btn" href="menu/menu.html">
-                            Menu
-                            <img class="cup-menu" src="images/coffee-cup.svg" alt="Icon of coffee cup">
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="header-menu-link">
+          <a class="header-menu" href="menu/menu.html">
+            <span>Menu</span>
+            <img
+              class="cup-icon"
+              src="images/coffee-cup.svg"
+              alt="Icon of coffee cup"
+            />
+          </a>
+          <div class="menu-icon-underline"></div>
         </div>
+        <a class="header-burger" href="home/burger.html">
+          <img
+            class="menu-header-burger"
+            src="images/button-icon-burger.svg"
+            alt="burger"
+          />
+        </a>
+      </div>
+      <div class="enjoy">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="background-video"
+          id="background-video"
+        >
+          <source src="./assets/video.mp4" type="video/mp4" />
+        </video>
+        <!-- <img class="hero-back-img" src="images/img-hero.svg" alt="Background with coffee cup"> -->
+        <div class="hero-offer-cover">
+          <div class="hero-offer">
+            <h1>
+              <span class="italic accent">Enjoy </span>premium coffee at our
+              charming cafe
+            </h1>
+            <p class="light">
+              With its inviting atmosphere and delicious coffee options, the
+              Coffee House Resource is a popular destination for coffee lovers
+              and those seeking a warm and inviting space to enjoy their
+              favorite beverage.
+            </p>
+            <div class="hero-menu-button">
+              <a class="hero-menu-btn" href="menu/menu.html">
+                Menu
+                <img
+                  class="cup-menu"
+                  src="images/coffee-cup.svg"
+                  alt="Icon of coffee cup"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- NEED TO ADD A SLIDER!!!-->
-    <div id = "favorite-coffee" class = "favorite-coffee-text" >
-        <h2 class="title-coffee">
-            Choose your <span class="accent italic"> favorite </span> coffee
+    <div id="favorite-coffee" class="favorite-coffee-text">
+      <h2 class="title-coffee">
+        Choose your <span class="accent italic"> favorite </span> coffee
+      </h2>
+      <div class="coffee-slider">
+        <div class="coffee-slider-left">
+          <button
+            class="slider-left slider-circle"
+            id="coffee-slider-left"
+            type="button"
+          >
+            <img
+              class="slider-arrow"
+              src="images/slider-arrow-left.svg"
+              alt="slider button left"
+            />
+            <img
+              class="slider-arrow appearOn"
+              src="images/slider-arrow-left-dark.svg"
+              alt="slider button left"
+            />
+          </button>
+        </div>
+        <div
+          class="coffee-slider-content"
+          id="slider-1"
+          style="visibility: visible; display: block"
+        >
+          <div class="coffee-slider-image">
+            <img
+              class="coffee-picture"
+              src="images/coffee-slider-1.svg"
+              alt="coffee cup picture in slider"
+            />
+          </div>
+          <div class="coffee-slider-text">
+            <h3 class="coffee-name dark">S'mores Frappuccino</h3>
+            <p class="coffee-description dark">
+              This new drink takes an espresso and mixes it with brown sugar and
+              cinnamon before being topped with oat milk.
+            </p>
+            <p class="coffee-price dark">$5.50</p>
+          </div>
+        </div>
+        <div
+          class="coffee-slider-content"
+          id="slider-2"
+          style="visibility: hidden; display: none"
+        >
+          <div class="coffee-slider-image">
+            <img
+              class="coffee-picture"
+              src="images/coffee-slider-2.svg"
+              alt="coffee cup picture in slider"
+            />
+          </div>
+          <div class="coffee-slider-text">
+            <h3 class="coffee-name dark">Caramel Macchiato</h3>
+            <p class="coffee-description dark">
+              Fragrant and unique classic espresso with rich caramel-peanut
+              syrup, with the addition of delicate cream under whipped thick
+              foam.
+            </p>
+            <p class="coffee-price dark">$5.00</p>
+          </div>
+        </div>
+        <div
+          class="coffee-slider-content"
+          id="slider-3"
+          style="visibility: hidden; display: none"
+        >
+          <div class="coffee-slider-image">
+            <img
+              class="coffee-picture"
+              src="images/coffee-slider-3.svg"
+              alt="coffee cup picture in slider"
+            />
+          </div>
+          <div class="coffee-slider-text">
+            <h3 class="coffee-name dark">Ice Coffee</h3>
+            <p class="coffee-description dark">
+              A popular summer drink that tones and invigorates. Prepared from
+              coffee, milk and ice.
+            </p>
+            <p class="coffee-price dark">$4.50</p>
+          </div>
+        </div>
+        <div class="coffee-slider-right">
+          <button
+            class="slider-rigth slider-circle"
+            id="coffee-slider-right"
+            type="button"
+          >
+            <img
+              class="slider-arrow rotate"
+              src="images/slider-arrow-left.svg"
+              alt="slider button right"
+            />
+            <img
+              class="slider-arrow appearOn rotate"
+              src="images/slider-arrow-left-dark.svg"
+              alt="slider button left"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="slider-bottom">
+        <div class="control-slider darkPic"></div>
+        <div class="control-slider lightPic"></div>
+        <div class="control-slider lightPic"></div>
+      </div>
+    </div>
+    <div id="about" class="about">
+      <h2 class="about-text dark">
+        Resource is
+        <span class="accent italic">the perfect and cozy place</span> where you
+        can enjoy a variety of hot beverages, relax, catch up with friends, or
+        get some work done.
+      </h2>
+      <div class="about-content">
+        <div class="about-content-left">
+          <div class="about1 about-image-large round hoverOn"></div>
+          <div class="about2 about-image-small round hoverOn"></div>
+        </div>
+        <div class="about-content-right">
+          <div class="about3 about-image-small round hoverOn"></div>
+          <div class="about4 about-image-large round hoverOn"></div>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-app" class="mobile-app">
+      <div class="mobile-app-content">
+        <h2 class="dark">
+          <span class="accent italic">Download</span> our apps to start ordering
         </h2>
-        <div class = "coffee-slider">
-            <div class = "coffee-slider-left">
-                <button class = "slider-left slider-circle" id = "coffee-slider-left" type="button">
-                    <img class = "slider-arrow" src = "images/slider-arrow-left.svg" alt="slider button left">
-                    <img class = "slider-arrow appearOn" src = "images/slider-arrow-left-dark.svg" alt="slider button left">
-                </button>
-            </div>
-            <div class = "coffee-slider-content" id = "slider-1" style = "visibility: visible; display: block;">
-                <div class = "coffee-slider-image">
-                    <img class ="coffee-picture" src="images/coffee-slider-1.svg" alt="coffee cup picture in slider">
-                </div>
-                <div class = "coffee-slider-text">
-                    <h3 class="coffee-name dark">
-                        S'mores Frappuccino
-                    </h3>
-                    <p class="coffee-description dark">
-                        This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.
-                    </p>
-                    <p class="coffee-price dark">$5.50</p>
-                </div>
-            </div>
-            <div class = "coffee-slider-content" id = "slider-2" style = "visibility: hidden; display: none;">
-                <div class = "coffee-slider-image">
-                    <img class ="coffee-picture" src="images/coffee-slider-2.svg" alt="coffee cup picture in slider">
-                </div>
-                <div class = "coffee-slider-text">
-                    <h3 class="coffee-name dark">
-                        Caramel Macchiato
-                    </h3>
-                    <p class="coffee-description dark">
-                        Fragrant and unique classic espresso with rich caramel-peanut syrup, with the addition of delicate cream under whipped thick foam.
-                    </p>
-                    <p class="coffee-price dark">$5.00</p>
-                </div>
-            </div>
-            <div class = "coffee-slider-content" id = "slider-3" style = "visibility: hidden; display: none;">
-                <div class = "coffee-slider-image">
-                    <img class ="coffee-picture" src="images/coffee-slider-3.svg" alt="coffee cup picture in slider">
-                </div>
-                <div class = "coffee-slider-text">
-                    <h3 class="coffee-name dark">
-                        Ice Coffee
-                    </h3>
-                    <p class="coffee-description dark">
-                        A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
-                    </p>
-                    <p class="coffee-price dark">$4.50</p>
-                </div>
-            </div>
-            <div class = "coffee-slider-right">
-                <button class = "slider-rigth slider-circle" id = "coffee-slider-right" type="button">
-                    <img class = "slider-arrow rotate" src = "images/slider-arrow-left.svg" alt="slider button right">
-                    <img class = "slider-arrow appearOn rotate" src = "images/slider-arrow-left-dark.svg" alt="slider button left">
-                </button>
-            </div>
+        <p class="dark">
+          Download the Resource app today and experience the comfort of ordering
+          your favorite coffee from wherever you are
+        </p>
+        <div class="mobile-buttons">
+          <button class="link">
+            <img class="icon" src="images/icon-apple.svg" alt="icon of apple" />
+            <img
+              class="iconAppear"
+              src="images/icon-apple-light.svg"
+              alt="icon of apple"
+            />
+            <span class="icon-info">
+              <span class="icon-available">Available on the</span>
+              <span class="icon-platform">App Store</span>
+            </span>
+          </button>
+          <button class="link">
+            <img
+              class="icon"
+              src="images/icon-google.svg"
+              alt="icon of google"
+            />
+            <img
+              class="iconAppear"
+              src="images/icon-google-light.svg"
+              alt="icon of google"
+            />
+            <span class="icon-info">
+              <span class="icon-available">Available on</span>
+              <span class="icon-platform">Google Play</span>
+            </span>
+          </button>
         </div>
-        <div class = "slider-bottom">
-            <div class = "control-slider darkPic"></div>
-            <div class = "control-slider lightPic"></div>
-            <div class = "control-slider lightPic"></div>
-        </div>
+      </div>
+      <div class="mobile-app-img"></div>
     </div>
-    <div id = "about" class = "about">
-        <h2 class="about-text dark">
-            Resource is <span class="accent italic">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
-        </h2>
-        <div class="about-content">
-            <div class="about-content-left">
-                <div class = "about1 about-image-large round hoverOn"></div>
-                <div class = "about2 about-image-small round hoverOn"></div>
-            </div>
-            <div class="about-content-right">
-                <div class = "about3 about-image-small round hoverOn"></div>
-                <div class = "about4 about-image-large round hoverOn"></div>
-            </div>
+    <div id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-offer">
+          <h2 class="footer-offer-text light">
+            Sip, Savor, Smile.
+            <span class="accent italic">It's coffee time!</span>
+          </h2>
+          <div class="offer-links">
+            <button class="offer-circle" type="button">
+              <img
+                class="offer-image"
+                src="images/twitter-light.svg"
+                alt="icon of twitter"
+              />
+              <img
+                class="offer-image appearOn"
+                src="images/twitter-dark.svg"
+                alt="icon of twitter"
+              />
+            </button>
+            <button class="offer-circle" type="button">
+              <img
+                class="offer-image"
+                src="images/instagram-light.svg"
+                alt="icon of instagram"
+              />
+              <img
+                class="offer-image appearOn"
+                src="images/instagram-dark.svg"
+                alt="icon of instagram"
+              />
+            </button>
+            <button class="offer-circle" type="button">
+              <img
+                class="offer-image"
+                src="images/facebook-light.svg"
+                alt="icon of facebook"
+              />
+              <img
+                class="offer-image appearOn"
+                src="images/facebook-dark.svg"
+                alt="icon of facebook"
+              />
+            </button>
+          </div>
         </div>
-    </div>
-    <div id = "mobile-app" class = "mobile-app">
-        <div class = "mobile-app-content">
-            <h2 class = "dark"><span class = "accent italic">Download</span> our apps to start ordering</h2>
-            <p class = "dark">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-            <div class = "mobile-buttons">
-                <button class = "link">
-                    <img class = "icon" src="images/icon-apple.svg" alt="icon of apple">
-                    <img class = "iconAppear" src="images/icon-apple-light.svg" alt="icon of apple">
-                    <span class="icon-info">
-                        <span class="icon-available">Available on the</span>
-                        <span class="icon-platform">App Store</span>
-                    </span>
-                </button>
-                <button class = "link">
-                    <img class = "icon" src="images/icon-google.svg" alt="icon of google">
-                    <img class = "iconAppear" src="images/icon-google-light.svg" alt="icon of google">
-                    <span class="icon-info">
-                        <span class="icon-available">Available on</span>
-                        <span class="icon-platform">Google Play</span>
-                    </span>
-                </button>
+        <div class="footer-contact-info">
+          <h3 class="light">Contact us</h3>
+          <div class="contact-info">
+            <div class="contact-info-with-slider">
+              <div class="contact-info-element contact-elem-1">
+                <img
+                  class="contact-pin contact-elem"
+                  src="images/pin-alt.svg"
+                  alt="picture for pin"
+                />
+                <a
+                  class="contact-text light"
+                  href="https://maps.google.com/?ll=30.3212625,-89.8586278"
+                  >8558 Green Rd., &nbsp;LA</a
+                >
+              </div>
+              <div class="contact-info-slider"></div>
             </div>
+            <div class="contact-info-with-slider">
+              <div class="contact-info-element">
+                <img
+                  class="contact-phone contact-elem"
+                  src="images/phone.svg"
+                  alt="picture for phone"
+                />
+                <a class="contact-text light" href="tel:+16035550123"
+                  >+1 (603) 555-0123</a
+                >
+              </div>
+              <div class="contact-info-slider"></div>
+            </div>
+            <div class="contact-info-element">
+              <img
+                class="contact-clock contact-elem"
+                src="images/clock.svg"
+                alt="picture for clock"
+              />
+              <span class="contact-text light"
+                >Mon-Sat: 9:00 AM – 23:00 PM</span
+              >
+            </div>
+          </div>
         </div>
-        <div class = "mobile-app-img"></div>
-    </div>
-    <div id = "footer" class = "footer">
-        <div class = "footer-container">
-            <div class = "footer-offer">
-                <h2 class="footer-offer-text light">
-                    Sip, Savor, Smile. <span class="accent italic">It's coffee time!</span>
-                </h2>
-                <div class = "offer-links">
-                    <button class = "offer-circle" type="button">
-                        <img class = "offer-image" src = "images/twitter-light.svg" alt="icon of twitter">
-                        <img class = "offer-image appearOn" src = "images/twitter-dark.svg" alt="icon of twitter">
-                    </button>
-                    <button class = "offer-circle" type="button">
-                        <img class = "offer-image" src = "images/instagram-light.svg" alt="icon of instagram">
-                        <img class = "offer-image appearOn" src = "images/instagram-dark.svg" alt="icon of instagram">
-                    </button>
-                    <button class = "offer-circle" type="button">
-                        <img class = "offer-image" src = "images/facebook-light.svg" alt="icon of facebook">
-                        <img class = "offer-image appearOn" src = "images/facebook-dark.svg" alt="icon of facebook">
-                    </button>
-                </div>
-            </div>
-            <div class = "footer-contact-info">
-                <h3 class = "light">Contact us</h3>
-                <div class = "contact-info">
-                    <div class = "contact-info-with-slider">
-                        <div class = "contact-info-element contact-elem-1">
-                            <img class = "contact-pin contact-elem" src = "images/pin-alt.svg" alt="picture for pin">
-                            <a class = "contact-text light" href="https://maps.google.com/?ll=30.3212625,-89.8586278">8558 Green Rd., &nbsp;LA</a>
-                        </div>
-                        <div class = "contact-info-slider"></div>
-                    </div>
-                    <div class = "contact-info-with-slider">
-                        <div class = "contact-info-element">
-                            <img class = "contact-phone contact-elem" src = "images/phone.svg" alt="picture for phone">
-                            <a class = "contact-text light" href="tel:+16035550123">+1 (603) 555-0123</a>
-                        </div>
-                        <div class = "contact-info-slider"></div>
-                    </div>
-                    <div class = "contact-info-element">
-                        <img class = "contact-clock contact-elem" src = "images/clock.svg" alt="picture for clock">
-                        <span class = "contact-text light">Mon-Sat: 9:00 AM – 23:00 PM</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <script src="./home/home.js"></script>
-</body>
+  </body>
 </html>
